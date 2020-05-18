@@ -33,6 +33,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Inherit some common Superior stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
+export SUPERIOR_OFFICIAL=true
+
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
         TARGET_DEVICE="lavender" \
@@ -47,6 +49,11 @@ PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
 
+
 TARGET_VENDOR_PRODUCT_NAME := lavender
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Maintainer SuperiorOS for Lavender
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.superior.maintainer=Jimgsey

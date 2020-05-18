@@ -1,6 +1,6 @@
 [
   {
-    "repository": "device_xiaomi_sdm660-common",
+    "repository": "device_xiaomi_lavender-common",
     "target_path": "device/xiaomi/sdm660-common"
   },
   {
@@ -12,7 +12,7 @@
     "target_path": "vendor/xiaomi/lavender"
   }
   {
-    "repository": "vendor_xiaomi_sdm660-common",
+    "repository": "vendor_xiaomi_lavender-common",
     "target_path": "vendor/xiaomi/sdm660-common"
   }
 ]

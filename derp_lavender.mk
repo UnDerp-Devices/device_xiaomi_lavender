@@ -31,9 +31,8 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common Superior stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
-export SUPERIOR_OFFICIAL=true
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -42,7 +41,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.9.0.PFGMIXM release-keys" 
 
 # Device identifier
-PRODUCT_NAME := superior_lavender
+PRODUCT_NAME := derp_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
@@ -54,6 +53,3 @@ TARGET_VENDOR_PRODUCT_NAME := lavender
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Maintainer SuperiorOS for Lavender
-PRODUCT_PROPERTY_OVERRIDES += \
-        ro.superior.maintainer=Jimgsey
